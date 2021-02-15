@@ -4,13 +4,13 @@
  These different projects/demos exist:
  
  
-                                                      Direct Referencing Instance
+                                                      Direct Referencing Instance (in project MobileMemoryManagement1)
 
 
 1
 Reference a gameobject in a Build‘s Scene. Toggle it.
 
-                                                      Direct Referencing
+                                                      Direct Referencing (in project MobileMemoryManagement1)
 
 
 2
