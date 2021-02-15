@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class SwitchSkybox : MonoBehaviour{
@@ -16,5 +17,12 @@ public class SwitchSkybox : MonoBehaviour{
             skyboxIndex = 0;
         }
         skybox.material = skyboxMaterials[skyboxIndex];
+        
+        //optimization 1:
+        //Resources.UnloadUnusedAssets();
+        
+        //optimization 2:
+        Resources.UnloadUnusedAssets();
+        GC.Collect();
     }
 }
