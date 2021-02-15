@@ -395,6 +395,7 @@ GameObject:
   - component: {fileID: 963194226}
   - component: {fileID: 963194229}
   - component: {fileID: 963194230}
+  - component: {fileID: 963194231}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -483,7 +484,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8a857cd30d3b82c418232cab03710c60, type: 3}
   m_Name: 
@@ -495,6 +496,25 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 814c617babb9d4741a5c47ebc9d5b5a8, type: 2}
   - {fileID: 2100000, guid: 9996f5ef92dd0ac4f89b103d14b6c251, type: 2}
   - {fileID: 2100000, guid: e8f8f42f63f40764a9b1c638862bf0d8, type: 2}
+--- !u!114 &963194231
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 963194225}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4cdda1453d729444dbc251f168f66c2a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ScriptableMaterials:
+  - {fileID: 11400000, guid: 724a0378bf511f14ca455ded3bc8646f, type: 2}
+  - {fileID: 11400000, guid: bc4859a78c7217944b2af94f38422615, type: 2}
+  - {fileID: 11400000, guid: 1813562219fe6564bbca4e10cae9e2e5, type: 2}
+  - {fileID: 11400000, guid: 175750e9976801f47a045a19ee47e8d5, type: 2}
+  - {fileID: 11400000, guid: 479826332d2c86a469657b8acfb7ec1f, type: 2}
+  - {fileID: 11400000, guid: 521658005c951e84686f54a0b3dc0c32, type: 2}
 --- !u!1 &988909616
 GameObject:
   m_ObjectHideFlags: 0
@@ -578,8 +598,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 963194230}
-        m_TargetAssemblyTypeName: SwitchSkybox, Assembly-CSharp
+      - m_Target: {fileID: 963194231}
+        m_TargetAssemblyTypeName: SwitchAndDeleteSkybox, Assembly-CSharp
         m_MethodName: NextSkybox
         m_Mode: 1
         m_Arguments:
