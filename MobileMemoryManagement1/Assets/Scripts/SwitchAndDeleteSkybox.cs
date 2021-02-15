@@ -1,4 +1,3 @@
-using System;
 using UnityEngine;
 
 public class SwitchAndDeleteSkybox : MonoBehaviour{
@@ -8,28 +7,30 @@ public class SwitchAndDeleteSkybox : MonoBehaviour{
     private static int skyboxIndex = 0;
 
 
-    private Material newMaterial;
+    //private Material newMaterial;
 
     void Start()
     {
         skybox = GetComponent<Skybox>();
+        skybox.material = Instantiate(ScriptableMaterials[skyboxIndex].material);
     }
 
     public void NextSkybox(){
         Destroy( skybox.material);
+        
         skyboxIndex++;
         if ((skyboxIndex + 1) > ScriptableMaterials.Length){
             skyboxIndex = 0;
         }
         
-        newMaterial =  Instantiate(ScriptableMaterials[skyboxIndex].material);
-        skybox.material = newMaterial;
-        
+        skybox.material = Instantiate(ScriptableMaterials[skyboxIndex].material);
+
+
         //optimization 1:
-        //Resources.UnloadUnusedAssets();
+        Resources.UnloadUnusedAssets();
         
         //optimization 2:
-        Resources.UnloadUnusedAssets();
-        GC.Collect();
+        //Resources.UnloadUnusedAssets();
+        //GC.Collect();
     }
 }
