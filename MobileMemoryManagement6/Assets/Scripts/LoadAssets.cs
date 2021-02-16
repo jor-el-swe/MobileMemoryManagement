@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.AddressableAssets;
 
@@ -7,7 +8,8 @@ public class LoadAssets : MonoBehaviour{
     private string assetName = "skybox";
     private string assetType = ".mat";
     private Skybox skybox;
-    
+    private static bool firstLoad = true;
+
     void Start(){
         skybox = Camera.main.GetComponent<Skybox>();
         
@@ -16,14 +18,16 @@ public class LoadAssets : MonoBehaviour{
     
     private void OnLoadDone(UnityEngine.ResourceManagement.AsyncOperations.AsyncOperationHandle<Material> obj)
     {
+        if(!firstLoad) 
+            Addressables.Release(skybox.material);
+        firstLoad = false;
+        
         //load the skybox material
         skybox.material = obj.Result;
     }
 
-    public void LoadNextSkybox(){
 
-        Addressables.Release(skybox.material);
-        
+    public void LoadNextSkybox(){
         skyboxIndex++;
         if (skyboxIndex >= 6){
             skyboxIndex = 0;
@@ -35,7 +39,7 @@ public class LoadAssets : MonoBehaviour{
         //Resources.UnloadUnusedAssets();
         
         //optimization 2:
-        //Resources.UnloadUnusedAssets();
-        //GC.Collect();
+        Resources.UnloadUnusedAssets();
+        GC.Collect();
     }
 }
