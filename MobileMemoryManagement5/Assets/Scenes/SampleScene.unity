@@ -559,7 +559,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1111649549}
-        m_TargetAssemblyTypeName: LoadResources, Assembly-CSharp
+        m_TargetAssemblyTypeName: LoadAssets, Assembly-CSharp
         m_MethodName: LoadNextSkybox
         m_Mode: 1
         m_Arguments:
