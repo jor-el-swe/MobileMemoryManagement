@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class LoadResources : MonoBehaviour{
@@ -10,12 +11,12 @@ public class LoadResources : MonoBehaviour{
         
         //load the first skybox
         var material = Resources.Load<Material>(loadPath + "0");
-        skybox.material = Instantiate(material);
+        skybox.material = material;
     }
     
     
     public void LoadNextSkybox(){
-        Destroy(skybox.material);
+
         
         skyboxIndex++;
         if (skyboxIndex >= 6){
@@ -24,13 +25,13 @@ public class LoadResources : MonoBehaviour{
       
         //load the next skybox material
         var material = Resources.Load<Material>(loadPath + skyboxIndex);
-        skybox.material = Instantiate(material);
+        skybox.material = material;
         
         //optimization 1:
-        Resources.UnloadUnusedAssets();
+        //Resources.UnloadUnusedAssets();
         
         //optimization 2:
-        //Resources.UnloadUnusedAssets();
-        //GC.Collect();
+        Resources.UnloadUnusedAssets();
+        GC.Collect();
     }
 }
