@@ -394,8 +394,6 @@ GameObject:
   - component: {fileID: 963194227}
   - component: {fileID: 963194226}
   - component: {fileID: 963194229}
-  - component: {fileID: 963194230}
-  - component: {fileID: 963194231}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -477,46 +475,6 @@ Skybox:
   m_GameObject: {fileID: 963194225}
   m_Enabled: 1
   m_CustomSkybox: {fileID: 0}
---- !u!114 &963194230
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 963194225}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8a857cd30d3b82c418232cab03710c60, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  skyboxMaterials:
-  - {fileID: 2100000, guid: 41e242f8c1c5def498b27ce008123909, type: 2}
-  - {fileID: 2100000, guid: e5aae4ce7d5416d42b84d8dcb580c30c, type: 2}
-  - {fileID: 2100000, guid: 604f770b804762f4781ec0ce0246b349, type: 2}
-  - {fileID: 2100000, guid: 814c617babb9d4741a5c47ebc9d5b5a8, type: 2}
-  - {fileID: 2100000, guid: 9996f5ef92dd0ac4f89b103d14b6c251, type: 2}
-  - {fileID: 2100000, guid: e8f8f42f63f40764a9b1c638862bf0d8, type: 2}
-  skybox: {fileID: 0}
---- !u!114 &963194231
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 963194225}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4cdda1453d729444dbc251f168f66c2a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ScriptableMaterials:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  skybox: {fileID: 0}
 --- !u!1 &988909616
 GameObject:
   m_ObjectHideFlags: 0
@@ -600,9 +558,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 963194231}
-        m_TargetAssemblyTypeName: SwitchAndDeleteSkybox, Assembly-CSharp
-        m_MethodName: NextSkybox
+      - m_Target: {fileID: 1111649549}
+        m_TargetAssemblyTypeName: LoadResources, Assembly-CSharp
+        m_MethodName: LoadNextSkybox
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
