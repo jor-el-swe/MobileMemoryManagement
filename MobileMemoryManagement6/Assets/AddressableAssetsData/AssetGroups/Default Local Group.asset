@@ -1,0 +1,97 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Default Local Group
+  m_EditorClassIdentifier: 
+  m_GroupName: Default Local Group
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 942f5136d65b0664f84edd9cf28d963f
+  m_SerializeEntries:
+  - m_GUID: 41e242f8c1c5def498b27ce008123909
+    m_Address: Assets/Materials/skybox0.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: a76d152842d82bc42a0f90e953e76bb2
+    m_Address: Assets/Materials/skybox0.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: e5aae4ce7d5416d42b84d8dcb580c30c
+    m_Address: Assets/Materials/skybox1.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 9808169a1688a0e4497ab0b6ac250f38
+    m_Address: Assets/Materials/skybox1.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 604f770b804762f4781ec0ce0246b349
+    m_Address: Assets/Materials/skybox2.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: ec41c8ca2922216498c29191562a72cd
+    m_Address: Assets/Materials/skybox2.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 814c617babb9d4741a5c47ebc9d5b5a8
+    m_Address: Assets/Materials/skybox3.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: d565d522cfa83a24494f25c34dac85bc
+    m_Address: Assets/Materials/skybox3.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 9996f5ef92dd0ac4f89b103d14b6c251
+    m_Address: Assets/Materials/skybox4.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 18b8f187a1360c346a5b9e31e7a021cc
+    m_Address: Assets/Materials/skybox4.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: e8f8f42f63f40764a9b1c638862bf0d8
+    m_Address: Assets/Materials/skybox5.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 2575aaef282547046a05ef8290e1c03b
+    m_Address: Assets/Materials/skybox5.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: 11cb02af128c69a4da9bb820dc8c38aa, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 9620eea72b880e1439d0f6b9af780f37, type: 2}
+    - {fileID: 11400000, guid: 166e44d7895bb9b4781a1adadbab80fb, type: 2}

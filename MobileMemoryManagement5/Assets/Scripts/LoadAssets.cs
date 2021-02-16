@@ -1,3 +1,4 @@
+using System;
 using System.IO;
 using UnityEngine;
 
@@ -42,7 +43,7 @@ public class LoadAssets : MonoBehaviour{
         //Resources.UnloadUnusedAssets();
         
         //optimization 2:
-        //Resources.UnloadUnusedAssets();
-        //GC.Collect();
+        Resources.UnloadUnusedAssets();
+        GC.Collect();
     }
 }
