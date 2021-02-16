@@ -12,7 +12,7 @@ namespace Editor{
 
             BuildPipeline.BuildAssetBundles(assetBundleDirectory,
                 BuildAssetBundleOptions.None,
-                BuildTarget.StandaloneWindows);
+                BuildTarget.Android);
         }
     }
 }
