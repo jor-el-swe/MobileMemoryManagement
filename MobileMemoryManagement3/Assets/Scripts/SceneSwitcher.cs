@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -5,11 +6,11 @@ public class SceneSwitcher : MonoBehaviour
 {
     private void Start(){
         //optimization 1:
-        //Resources.UnloadUnusedAssets();
+        Resources.UnloadUnusedAssets();
         
         //optimization 2:
         //Resources.UnloadUnusedAssets();
-        //GC.Collect();
+        GC.Collect();
     }
 
     public void nextScene(){
@@ -22,8 +23,8 @@ public class SceneSwitcher : MonoBehaviour
         //Resources.UnloadUnusedAssets();
         
         //optimization 2:
-        //Resources.UnloadUnusedAssets();
-        //GC.Collect();
+        Resources.UnloadUnusedAssets();
+        GC.Collect();
         
         SceneManager.LoadScene(currentBuildIndex);
     }
