@@ -7,36 +7,44 @@ public class LoadAssets : MonoBehaviour{
     private string skyboxName = "skybox";
     
     private Skybox skybox;
-    private AssetBundle myLoadedAssetBundle;
+    private AssetBundle assetBundle;
+//    private AssetBundle assetBundle1;
+  //  private AssetBundle assetBundle2;
+    //private AssetBundle assetBundle3;
+    //private AssetBundle assetBundle4;
+   // private AssetBundle assetBundle5;
     
     void Start(){
         skybox = Camera.main.GetComponent<Skybox>();
         
-        myLoadedAssetBundle = AssetBundle.LoadFromFile(Path.Combine(Application.streamingAssetsPath, "materials"));
+        assetBundle = AssetBundle.LoadFromFile(Path.Combine(Application.streamingAssetsPath,"skybox0"));
         
-        if (myLoadedAssetBundle == null) {
+        if (assetBundle == null) {
             Debug.Log("Failed to load AssetBundle!");
             return;
         }
         
         //load the first skybox
-        var material = myLoadedAssetBundle.LoadAsset<Material>(skyboxName + "0");
+        var material = assetBundle.LoadAsset<Material>(skyboxName + "0");
         skybox.material = material;
     }
     
     public void LoadNextSkybox(){
+        
+        assetBundle.Unload(true);
         
         skyboxIndex++;
         if (skyboxIndex >= 6){
             skyboxIndex = 0;
         }
       
-        if (myLoadedAssetBundle == null) {
+        assetBundle = AssetBundle.LoadFromFile(Path.Combine(Application.streamingAssetsPath,"skybox"+skyboxIndex));
+        if (assetBundle == null) {
             Debug.Log("Failed to load AssetBundle!");
             return;
         }
         //load the next skybox material
-        var material = myLoadedAssetBundle.LoadAsset<Material>(skyboxName + skyboxIndex);
+        var material = assetBundle.LoadAsset<Material>(skyboxName + skyboxIndex);
         skybox.material = material;
         
         //optimization 1:

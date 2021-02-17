@@ -1,0 +1,22 @@
+ManifestFileVersion: 0
+CRC: 1041994236
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: fae763bca580b063038e209942d39706
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 5f2def8ba2181b6acb82b72a0c42e068
+HashAppended: 0
+ClassTypes:
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 89
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Materials/skybox2.mat
+- Assets/Materials/skybox2.png
+Dependencies: []
