@@ -1,6 +1,7 @@
 using System;
 using UnityEngine;
 using UnityEngine.AddressableAssets;
+using UnityEngine.ResourceManagement.AsyncOperations;
 
 public class LoadAssets : MonoBehaviour{
     private static int skyboxIndex = 0;
@@ -14,8 +15,14 @@ public class LoadAssets : MonoBehaviour{
         skybox = Camera.main.GetComponent<Skybox>();
         
         Addressables.LoadAssetAsync<Material>(loadPath+assetName +"0" + assetType).Completed += OnLoadDone;
+        Addressables.LoadAssetAsync<GameObject>("Assets/Prefabs/Cube.prefab").Completed += CubeLoaded;
     }
-    
+
+    private void CubeLoaded(AsyncOperationHandle<GameObject> obj){
+        Debug.Log("loaded rotating cube");
+        Instantiate(obj.Result);
+    }
+
     private void OnLoadDone(UnityEngine.ResourceManagement.AsyncOperations.AsyncOperationHandle<Material> obj)
     {
         if(!firstLoad) 
