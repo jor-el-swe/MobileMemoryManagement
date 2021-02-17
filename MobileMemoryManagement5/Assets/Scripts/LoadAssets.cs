@@ -8,11 +8,6 @@ public class LoadAssets : MonoBehaviour{
     
     private Skybox skybox;
     private AssetBundle assetBundle;
-//    private AssetBundle assetBundle1;
-  //  private AssetBundle assetBundle2;
-    //private AssetBundle assetBundle3;
-    //private AssetBundle assetBundle4;
-   // private AssetBundle assetBundle5;
     
     void Start(){
         skybox = Camera.main.GetComponent<Skybox>();
