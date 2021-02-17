@@ -20,81 +20,94 @@ MonoBehaviour:
   - m_GUID: 41e242f8c1c5def498b27ce008123909
     m_Address: Assets/Materials/skybox0.mat
     m_ReadOnly: 0
-    m_SerializedLabels: []
-    m_MainAsset: {fileID: 0}
-    m_TargetAsset: {fileID: 0}
+    m_SerializedLabels:
+    - skyboxes
+    m_MainAsset: {fileID: 2100000, guid: 41e242f8c1c5def498b27ce008123909, type: 2}
+    m_TargetAsset: {fileID: 2100000, guid: 41e242f8c1c5def498b27ce008123909, type: 2}
   - m_GUID: a76d152842d82bc42a0f90e953e76bb2
     m_Address: Assets/Materials/skybox0.png
     m_ReadOnly: 0
-    m_SerializedLabels: []
-    m_MainAsset: {fileID: 0}
-    m_TargetAsset: {fileID: 0}
+    m_SerializedLabels:
+    - skyboxes
+    m_MainAsset: {fileID: 8900000, guid: a76d152842d82bc42a0f90e953e76bb2, type: 3}
+    m_TargetAsset: {fileID: 8900000, guid: a76d152842d82bc42a0f90e953e76bb2, type: 3}
   - m_GUID: e5aae4ce7d5416d42b84d8dcb580c30c
     m_Address: Assets/Materials/skybox1.mat
     m_ReadOnly: 0
-    m_SerializedLabels: []
-    m_MainAsset: {fileID: 0}
-    m_TargetAsset: {fileID: 0}
+    m_SerializedLabels:
+    - skyboxes
+    m_MainAsset: {fileID: 2100000, guid: e5aae4ce7d5416d42b84d8dcb580c30c, type: 2}
+    m_TargetAsset: {fileID: 2100000, guid: e5aae4ce7d5416d42b84d8dcb580c30c, type: 2}
   - m_GUID: 9808169a1688a0e4497ab0b6ac250f38
     m_Address: Assets/Materials/skybox1.png
     m_ReadOnly: 0
-    m_SerializedLabels: []
-    m_MainAsset: {fileID: 0}
-    m_TargetAsset: {fileID: 0}
+    m_SerializedLabels:
+    - skyboxes
+    m_MainAsset: {fileID: 8900000, guid: 9808169a1688a0e4497ab0b6ac250f38, type: 3}
+    m_TargetAsset: {fileID: 8900000, guid: 9808169a1688a0e4497ab0b6ac250f38, type: 3}
   - m_GUID: 604f770b804762f4781ec0ce0246b349
     m_Address: Assets/Materials/skybox2.mat
     m_ReadOnly: 0
-    m_SerializedLabels: []
-    m_MainAsset: {fileID: 0}
-    m_TargetAsset: {fileID: 0}
+    m_SerializedLabels:
+    - skyboxes
+    m_MainAsset: {fileID: 2100000, guid: 604f770b804762f4781ec0ce0246b349, type: 2}
+    m_TargetAsset: {fileID: 2100000, guid: 604f770b804762f4781ec0ce0246b349, type: 2}
   - m_GUID: ec41c8ca2922216498c29191562a72cd
     m_Address: Assets/Materials/skybox2.png
     m_ReadOnly: 0
-    m_SerializedLabels: []
-    m_MainAsset: {fileID: 0}
-    m_TargetAsset: {fileID: 0}
+    m_SerializedLabels:
+    - skyboxes
+    m_MainAsset: {fileID: 8900000, guid: ec41c8ca2922216498c29191562a72cd, type: 3}
+    m_TargetAsset: {fileID: 8900000, guid: ec41c8ca2922216498c29191562a72cd, type: 3}
   - m_GUID: 814c617babb9d4741a5c47ebc9d5b5a8
     m_Address: Assets/Materials/skybox3.mat
     m_ReadOnly: 0
-    m_SerializedLabels: []
-    m_MainAsset: {fileID: 0}
-    m_TargetAsset: {fileID: 0}
+    m_SerializedLabels:
+    - skyboxes
+    m_MainAsset: {fileID: 2100000, guid: 814c617babb9d4741a5c47ebc9d5b5a8, type: 2}
+    m_TargetAsset: {fileID: 2100000, guid: 814c617babb9d4741a5c47ebc9d5b5a8, type: 2}
   - m_GUID: d565d522cfa83a24494f25c34dac85bc
     m_Address: Assets/Materials/skybox3.png
     m_ReadOnly: 0
-    m_SerializedLabels: []
-    m_MainAsset: {fileID: 0}
-    m_TargetAsset: {fileID: 0}
+    m_SerializedLabels:
+    - skyboxes
+    m_MainAsset: {fileID: 8900000, guid: d565d522cfa83a24494f25c34dac85bc, type: 3}
+    m_TargetAsset: {fileID: 8900000, guid: d565d522cfa83a24494f25c34dac85bc, type: 3}
   - m_GUID: 9996f5ef92dd0ac4f89b103d14b6c251
     m_Address: Assets/Materials/skybox4.mat
     m_ReadOnly: 0
-    m_SerializedLabels: []
-    m_MainAsset: {fileID: 0}
-    m_TargetAsset: {fileID: 0}
+    m_SerializedLabels:
+    - skyboxes
+    m_MainAsset: {fileID: 2100000, guid: 9996f5ef92dd0ac4f89b103d14b6c251, type: 2}
+    m_TargetAsset: {fileID: 2100000, guid: 9996f5ef92dd0ac4f89b103d14b6c251, type: 2}
   - m_GUID: 18b8f187a1360c346a5b9e31e7a021cc
     m_Address: Assets/Materials/skybox4.png
     m_ReadOnly: 0
-    m_SerializedLabels: []
-    m_MainAsset: {fileID: 0}
-    m_TargetAsset: {fileID: 0}
+    m_SerializedLabels:
+    - skyboxes
+    m_MainAsset: {fileID: 8900000, guid: 18b8f187a1360c346a5b9e31e7a021cc, type: 3}
+    m_TargetAsset: {fileID: 8900000, guid: 18b8f187a1360c346a5b9e31e7a021cc, type: 3}
   - m_GUID: e8f8f42f63f40764a9b1c638862bf0d8
     m_Address: Assets/Materials/skybox5.mat
     m_ReadOnly: 0
-    m_SerializedLabels: []
-    m_MainAsset: {fileID: 0}
-    m_TargetAsset: {fileID: 0}
+    m_SerializedLabels:
+    - skyboxes
+    m_MainAsset: {fileID: 2100000, guid: e8f8f42f63f40764a9b1c638862bf0d8, type: 2}
+    m_TargetAsset: {fileID: 2100000, guid: e8f8f42f63f40764a9b1c638862bf0d8, type: 2}
   - m_GUID: 2575aaef282547046a05ef8290e1c03b
     m_Address: Assets/Materials/skybox5.png
     m_ReadOnly: 0
-    m_SerializedLabels: []
+    m_SerializedLabels:
+    - skyboxes
     m_MainAsset: {fileID: 0}
     m_TargetAsset: {fileID: 0}
   - m_GUID: be5afb63d90102142a1dc94fd9635d9a
     m_Address: Assets/Prefabs/Cube.prefab
     m_ReadOnly: 0
-    m_SerializedLabels: []
-    m_MainAsset: {fileID: 0}
-    m_TargetAsset: {fileID: 0}
+    m_SerializedLabels:
+    - Cubes
+    m_MainAsset: {fileID: 7129043710956209120, guid: be5afb63d90102142a1dc94fd9635d9a, type: 3}
+    m_TargetAsset: {fileID: 7129043710956209120, guid: be5afb63d90102142a1dc94fd9635d9a, type: 3}
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: 11cb02af128c69a4da9bb820dc8c38aa, type: 2}
   m_SchemaSet:

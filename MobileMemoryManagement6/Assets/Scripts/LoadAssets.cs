@@ -46,7 +46,7 @@ public class LoadAssets : MonoBehaviour{
         //Resources.UnloadUnusedAssets();
         
         //optimization 2:
-        Resources.UnloadUnusedAssets();
+        //Resources.UnloadUnusedAssets();
         GC.Collect();
     }
 }
